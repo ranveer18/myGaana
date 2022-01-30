@@ -39,11 +39,33 @@ nav ul li {
   font-weight: bolder;
   font-size: 1.3rem;
 }
-
+.btn-container {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+.filter-btn {
+  background: transparent;
+  font-weight: bold;
+  background-color: #222;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 0.375rem 0.75rem;
+  color: #f32501;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.filter-btn:hover {
+  background: black;
+  color: #f32501;
+}
 .container {
   min-height: 72vh;
   /* background-color: black; */
-  color: rgb(251, 60, 54);
+  color: #e64b2e;
   font-family: "Varela Round", sans-serif;
   display: flex;
   margin: 23px auto;
@@ -126,7 +148,7 @@ nav ul li {
   transition: opacity 0.4s ease-in;
 }
 
-@media (min-width: 320px) and (max-width: 1100px) {
+@media (min-width: 320px) and (max-width: 500px) {
   .playbtn {
     position: relative;
     top: 200px;
@@ -144,5 +166,14 @@ nav ul li {
   .bottom {
     gap: 15px;
     height: 160px;
+  }
+  .btn-container {
+    position: absolute;
+    right: 31px;
+  }
+
+  h1 {
+    font-weight: bolder;
+    font-size: 29px;
   }
 }
