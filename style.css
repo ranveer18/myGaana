@@ -39,6 +39,10 @@ nav ul li {
   font-weight: bolder;
   font-size: 1.3rem;
 }
+h2 {
+  position: relative;
+  left: 450px;
+}
 .btn-container {
   margin: 1rem 0rem;
   display: flex;
@@ -147,7 +151,13 @@ nav ul li {
   opacity: 0;
   transition: opacity 0.4s ease-in;
 }
-
+@media (min-width: 500px) and (max-width: 1100px) {
+  h2 {
+    position: relative;
+    margin-top: 20px;
+    left: 150px;
+  }
+}
 @media (min-width: 320px) and (max-width: 500px) {
   .playbtn {
     position: relative;
@@ -169,11 +179,20 @@ nav ul li {
   }
   .btn-container {
     position: absolute;
-    right: 31px;
+    right: 20px;
   }
 
   h1 {
     font-weight: bolder;
-    font-size: 29px;
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    position: relative;
+    margin-top: 20px;
+    left: 40px;
   }
 }

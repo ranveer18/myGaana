@@ -4,7 +4,6 @@ let masterPlay = document.getElementById("masterPlay");
 let myProgressBar = document.getElementById("myProgressBar");
 let gif = document.getElementById("gif");
 let masterSongName = document.getElementById("masterSongName");
-// let songItems = Array.from(document.getElementsByClassName("songItem"));
 const btnContainer = document.querySelector(".btn-container");
 
 // Songs
@@ -199,11 +198,11 @@ function playSongs() {
     myProgressBar.value = progress;
   });
   //
+
   myProgressBar.addEventListener("change", () => {
     audioElement.currentTime =
       (myProgressBar.value * audioElement.duration) / 100;
   });
-
   let makeAllPlays = () => {
     Array.from(document.getElementsByClassName("songItemPlay")).forEach(
       (element) => {
@@ -260,3 +259,4 @@ function playSongs() {
     masterPlay.classList.add("fa-pause-circle");
   });
 }
+playSongs();
